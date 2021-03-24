@@ -1,0 +1,23 @@
+=========
+REMEMBER!
+=========
+Each time you change the logic / update NPM package version, do the following steps:
+1. Perform a backup before any change has been made, by running on terminal 'npm run backup' or manually to the backups directory.
+2. After the change, check that everything works OK.
+3. Keep the maintenance - Every change you do - Make sure to update in this document if needed.
+4. Do commit + push on Git project repository.
+5. Keep the backup update - Every change you do - Update in iOmega (each couple of days do backup there).
+=================================
+
+ToDo tasks:
+===========
+-Copy the code from 'udemy-courses' project.
+-Register an account from an email address in the KeyPass to be a development account.
+-Get the accounts logic from the 'udemy-courses' project.
+-The project will contain a few scripts:
+-Vote script: Crawl with puppeteer and vote 20 times on random questions with specific tags.
+-Fix script: Find spell mistakes, by specific patterns (lower case first letter in question, for example).
+-In the fix script manages a score logic to find multi spell mistakes, outside code snippets, and calculate the score of a random/synchronic question Ids.
+
+Completed + canceled tasks:
+===========================

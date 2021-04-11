@@ -18,6 +18,7 @@ ToDo tasks:
 -Vote script: Crawl with puppeteer and vote 20 times on random questions with specific tags.
 -Fix script: Find spell mistakes, by specific patterns (lower case first letter in question, for example).
 -In the fix script manages a score logic to find multi spell mistakes, outside code snippets, and calculate the score of a random/synchronic question Ids.
+-The daily script will include a 20 votes and a number of edit posts from the settings.js
 
 Completed + canceled tasks:
 ===========================

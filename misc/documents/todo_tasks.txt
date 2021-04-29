@@ -2,7 +2,7 @@
 REMEMBER!
 =========
 Each time you change the logic / update NPM package version, do the following steps:
-1. Perform a backup before any change has been made, by running on terminal 'npm run backup' or manually to the backups directory.
+1. Perform a backup before any change has been made, by running in the terminal 'npm run backup' or manually to the backups directory.
 2. After the change, check that everything works OK.
 3. Keep the maintenance - Every change you do - Make sure to update in this document if needed.
 4. Do commit + push on Git project repository.
@@ -18,7 +18,7 @@ ToDo tasks:
 -Vote script: Crawl with puppeteer and vote 20 times on random questions with specific tags.
 -Fix script: Find spell mistakes, by specific patterns (lower case first letter in question, for example).
 -In the fix script manages a score logic to find multi spell mistakes, outside code snippets, and calculate the score of a random/synchronic question Ids.
--The daily script will include a 20 votes and a number of edit posts from the settings.js
+-The daily script will include a 20 votes and a number of edit posts from the settings.js.
 
 Completed + canceled tasks:
 ===========================

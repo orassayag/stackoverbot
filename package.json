@@ -1,0 +1,48 @@
+{
+  "name": "stackoverbot",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A Node.js automation tool for Stack Overflow that performs automated voting, spell-checking, and post editing with Puppeteer-based web automation and scoring system for content quality improvement.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/stackoverbot.git"
+  },
+  "keywords": [
+    "nodejs",
+    "stackoverflow",
+    "automation",
+    "bot",
+    "puppeteer",
+    "web-scraping",
+    "voting",
+    "spell-checker",
+    "content-quality",
+    "web-automation",
+    "scraper",
+    "stack-overflow-api"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "vote": "node src/scripts/vote.js",
+    "fix": "node src/scripts/fix.js",
+    "daily": "node src/scripts/daily.js",
+    "backup": "node src/scripts/backup.js"
+  },
+  "author": "Or Assayag <orassayag@gmail.com>",
+  "contributors": [
+    {
+      "name": "Or Assayag",
+      "email": "orassayag@gmail.com",
+      "url": "https://github.com/orassayag"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^13.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

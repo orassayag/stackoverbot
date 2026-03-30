@@ -19,6 +19,7 @@ ToDo tasks:
 -Fix script: Find spell mistakes, by specific patterns (lower case first letter in question, for example).
 -In the fix script manages a score logic to find multi spell mistakes, outside code snippets, and calculate the score of a random/synchronic question Ids.
 -The daily script will include a 20 votes and a number of edit posts from the settings.js.
+-Let the bot run for 2-3 weeks on the fake account, do verify no captcha involved.
 
 Completed + canceled tasks:
 ===========================

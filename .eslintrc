@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true,
+      },
+    ],
+    "no-shadow": [
+      "error",
+      {
+        "builtinGlobals": false,
+        "hoist": "functions",
+        "allow": [],
+      },
+    ],
+    "default-case": 0,
+    "comma-dangle": 1,
+    "semi": 1,
+    "no-useless-constructor": 0,
+    "no-useless-escape": 0,
+    "no-console": 0,
+    "no-debugger": 0,
+    "no-empty": 0,
+    "linebreak-style": 0,
+    "import/first": 0,
+    "import/imports-first": 0,
+    "no-async-promise-executor": 0,
+  },
+}

@@ -1,6 +1,16 @@
 {
-    "cSpell.words": [
-        "Assayag",
-        "orassayag"
-    ]
+  "cSpell.words": [
+    "Assayag",
+    "downvotes",
+    "orassayag",
+    "stackoverbot",
+    "upvotes"
+  ],
+  "cSpell.ignorePaths": [
+    "coverage",
+    "node_modules",
+    "dist",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml"
+  ]
 }

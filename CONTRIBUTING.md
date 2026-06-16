@@ -9,6 +9,7 @@ Everyone is welcome to contribute to this project. Contributing doesn't just mea
 ### Reporting Issues
 
 If you find a bug or have a feature request:
+
 1. Check if the issue already exists in the [GitHub Issues](https://github.com/orassayag/stackoverbot/issues)
 2. If not, create a new issue with:
    - Clear title and description
@@ -32,59 +33,55 @@ If you find a bug or have a feature request:
 ### Code Style Guidelines
 
 This project uses:
-- **Node.js** with modern JavaScript
-- **NPM** for package management
-- **Puppeteer** for web automation
+
+- **TypeScript** with strict type checking
+- **ESLint** for code quality
+- **Prettier** for code formatting
+- **InversifyJS** for dependency injection
 
 Before submitting:
-```bash
-# Install dependencies
-npm install
 
-# Test your changes
-npm start
+```bash
+pnpm format
+pnpm lint
+pnpm build
+pnpm test
 ```
 
 ### Coding Standards
 
-1. **Clear naming**: Use descriptive names for variables and functions
-2. **Error handling**: Implement proper error handling with meaningful messages
-3. **Documentation**: Comment complex logic and automation flows
-4. **Type safety**: Use proper type checking where applicable
-5. **No hardcoded credentials**: Always use environment variables or configuration files
-6. **Ethical use**: Ensure automation respects Stack Overflow's terms of service and rate limits
+1. **Dependency Injection**: Use @injectable decorators for services
+2. **Error handling**: All errors must include unique error codes (see `misc/error_index.txt`)
+3. **Logging**: Use structured Logger instead of console.log
+4. **Type safety**: Avoid using `any` - define proper types
+5. **Domain organization**: Place code in appropriate domain folders (not utils/)
+6. **Naming**: Use clear, descriptive names for variables and functions
 
 ### Adding New Features
 
 When adding new features:
-1. Create appropriate configuration options
-2. Add service logic for the new functionality
-3. Update documentation
-4. Test thoroughly on a development account
-5. Ensure compliance with Stack Overflow's API and automation policies
 
-### Stack Overflow API Compliance
+1. Create appropriate types in `src/types/`
+2. Add service logic in `src/services/` with DI
+3. Update scripts in `src/scripts/` if needed
+4. Add error codes and update `misc/error_index.txt`
+5. Test thoroughly with vitest
 
-This project must comply with Stack Overflow's:
-- API usage guidelines
-- Rate limiting policies
-- Terms of service
-- Automation best practices
+### Error Code Management
 
-Always:
-1. Test on development accounts first
-2. Implement proper rate limiting
-3. Respect captcha and authentication mechanisms
-4. Add delays between operations
-5. Monitor for and handle error responses
+When adding new errors:
+
+1. Use the next available error code from `misc/error_index.txt`
+2. Format: `[ERROR-XXXXXXX]` at the start of the error message
+3. Document the error in `misc/error_index.txt`
 
 ## Questions or Need Help?
 
 Please feel free to contact me with any question, comment, pull-request, issue, or any other thing you have in mind.
 
-* Or Assayag <orassayag@gmail.com>
-* GitHub: https://github.com/orassayag
-* StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
-* LinkedIn: https://linkedin.com/in/orassayag
+- Or Assayag <orassayag@gmail.com>
+- GitHub: https://github.com/orassayag
+- StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
+- LinkedIn: https://linkedin.com/in/orassayag
 
-Thank you for contributing!
+Thank you for contributing! 🙏

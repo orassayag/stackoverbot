@@ -2,14 +2,10 @@
   "name": "stackoverbot",
   "version": "1.0.0",
   "private": false,
-  "description": "A Node.js automation tool for Stack Overflow that performs automated voting, spell-checking, and post editing with Puppeteer-based web automation and scoring system for content quality improvement.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/orassayag/stackoverbot.git"
-  },
+  "description": "StackOverBot is a Node.js automation tool for Stack Overflow using Puppeteer. Built for educational purposes, it automates voting, spell-checking, and post editing. It includes tag-based question selection, mistake detection, scoring, structured logging, and rate-limited workflows and include logs",
   "keywords": [
     "nodejs",
-    "stackoverflow",
+    "stackoverbot",
     "automation",
     "bot",
     "puppeteer",
@@ -21,15 +17,24 @@
     "scraper",
     "stack-overflow-api"
   ],
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "vote": "node src/scripts/vote.js",
-    "fix": "node src/scripts/fix.js",
-    "daily": "node src/scripts/daily.js",
-    "backup": "node src/scripts/backup.js"
+  "homepage": "https://github.com/orassayag/stackoverbot#readme",
+  "bugs": {
+    "url": "https://github.com/orassayag/stackoverbot/issues"
   },
-  "author": "Or Assayag <orassayag@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/stackoverbot.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/orassayag"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Or Assayag",
+    "email": "orassayag@gmail.com",
+    "url": "https://github.com/orassayag"
+  },
   "contributors": [
     {
       "name": "Or Assayag",
@@ -37,10 +42,33 @@
       "url": "https://github.com/orassayag"
     }
   ],
-  "license": "MIT",
-  "dependencies": {
-    "puppeteer": "^13.0.0"
+  "type": "commonjs",
+  "main": "src/index.js",
+  "files": [
+    ".github",
+    ".vscode",
+    "misc",
+    "src",
+    ".eslintrc",
+    ".gitignore",
+    ".prettierrc",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "INSTRUCTIONS.md",
+    "LICENSE",
+    "package.json",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "backup": "node src/scripts/backup.js",
+    "daily": "node src/scripts/daily.js",
+    "fix": "node src/scripts/fix.js",
+    "start": "node src/index.js",
+    "vote": "node src/scripts/vote.js"
   },
+  "dependencies": {},
   "devDependencies": {},
   "engines": {
     "node": ">=14.0.0"
